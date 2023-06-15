@@ -11,7 +11,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #777;
+  color: #04334f;
 }
 
 a {
@@ -128,11 +128,11 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #013d5f;
+  background: #04334f;
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  transition: all 0.4s;
+  transition: all 0.7s;
 }
 
 .back-to-top i {
@@ -156,14 +156,14 @@ section {
 --------------------------------------------------------------*/
 #header {
   height: 80px;
-  transition: all 0.5s;
+  transition: all 0.8s;
   z-index: 997;
-  transition: all 0.5s;
-  background: #013d5fad;
+  transition: all 0.8s;
+  background: #04344f00;
 }
 
 #header.header-scrolled {
-  background: #013d5f;
+  background: #04344f;
   height: 60px;
 }
 
@@ -178,7 +178,7 @@ section {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #fff;
+  color: #d6ac82;
   text-decoration: none;
   line-height: 0;
 }
@@ -225,7 +225,7 @@ section {
   font-size: 14px;
   color: #d2ece9;
   white-space: nowrap;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .navbar a i,
@@ -417,7 +417,7 @@ section {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 75vh;
+  height: 100vh;
   background: url("../img/icefoss.png") top center;
   background-size: cover;
   position: relative;
@@ -557,11 +557,11 @@ section {
 
 .services .title a {
   color: #353440;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .services .icon-box:hover .title a {
-  color: #70b9b0;
+  color: #707bb9;
 }
 
 .services .description {
@@ -869,7 +869,7 @@ section {
 }
 
 .team .member .social a {
-  color: #92cac3;
+  color:#7071b9 ;
   transition: 0.3s;
 }
 
@@ -919,7 +919,7 @@ section {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid #70b9b0;
+  border: 1px solid #7c70b9;
 }
 
 .contact .social-links a:hover {
@@ -933,7 +933,7 @@ section {
 
 .contact .info i {
   font-size: 32px;
-  color: #70b9b0;
+  color: #7071b9;
   float: left;
   line-height: 1;
 }
@@ -960,7 +960,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #7071b9;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -980,7 +980,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #7071b9;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
@@ -993,7 +993,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #70b9b0;
+  background: #7071b9;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1001,7 +1001,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #92cac3;
+  background:#7071b9 ;
 }
 
 @keyframes animate-loading {
@@ -1031,7 +1031,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #073839;
+  background: #04334f;
   padding: 30px 0;
   color: #fff;
   font-size: 14px;
