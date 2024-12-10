@@ -1,0 +1,6 @@
+requests
+asyncio
+tqdm
+watchgod
+aiohttp
+aiofiles
