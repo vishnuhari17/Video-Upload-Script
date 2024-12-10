@@ -104,8 +104,8 @@ async def create_post(session, video_title, video_hash, category_id):
     data = {
         "title": video_title,
         "hash": video_hash,
-        "is_available_in_public_feed": True,  # Make post visible in Super Feed
-        "category_id": category_id  # Use category ID for "Super Feed"
+        "is_available_in_public_feed": True, 
+        "category_id": category_id  
     }
     try:
         async with session.post(endpoint, headers=HEADERS, json=data) as response:

@@ -17,32 +17,41 @@ A Python-based bot that monitors a directory for new video files, uploads them t
     git clone <repository_url>
     cd <repository_directory>
     ```
-
-2. Install dependencies:
+2. Create a virtual environment:
+    ```sh
+    python -m venv venv
+    ```
+3. Activate the virtual environment:
+    - On Windows:
+        ```sh
+        venv\Scripts\activate
+        ```
+    - On macOS/Linux:
+        ```sh
+        source venv/bin/activate
+        ```
+4. Install dependencies:
     ```sh
     pip install -r requirements.txt
     ```
-
-3. Set your Flic-Token in `main.py`:
+5. Set your Flic-Token in [main.py](http://_vscodecontentref_/1):
     ```python
     FLIC_TOKEN = "your_flic_token_here"
     ```
 
 ## Usage
-1. Create a directory named `videos` in the root of the project if it doesn't exist:
+1. Create a directory named [videos](http://_vscodecontentref_/2) in the root of the project if it doesn't exist:
     ```sh
     mkdir videos
     ```
-
 2. Run the bot:
     ```sh
     python main.py
     ```
-
-3. Place your `.mp4` videos in the `videos` directory and the script will do the rest.
+3. Place your `.mp4` videos in the [videos](http://_vscodecontentref_/3) directory and the script will do the rest.
 
 ## How It Works
-1. **Directory Monitoring**: The script monitors the `videos` directory for new `.mp4` files using the `watchdog` library.
+1. **Directory Monitoring**: The script monitors the [videos](http://_vscodecontentref_/4) directory for new `.mp4` files using the [watchdog](http://_vscodecontentref_/5) library.
 2. **Upload Process**: When a new video file is detected, the script performs the following steps:
     - **Get Upload URL**: Asynchronously requests an upload URL from the server.
     - **Upload Video**: Asynchronously uploads the video file to the server with a progress bar.
@@ -75,11 +84,11 @@ A Python-based bot that monitors a directory for new video files, uploads them t
 - **VideoHandler(FileSystemEventHandler)**: Handles file system events for video files.
 
 ### Main Entry Point
-- The script starts by calling `asyncio.run(monitor_videos())`, which begins monitoring the `videos` directory for new video files.
+- The script starts by calling [asyncio.run(monitor_videos())](http://_vscodecontentref_/6), which begins monitoring the [videos](http://_vscodecontentref_/7) directory for new video files.
 
 ## Logging
-- The script uses the `logging` module to log messages at various points in the execution. This helps in debugging and understanding the flow of the script.
+- The script uses the [logging](http://_vscodecontentref_/8) module to log messages at various points in the execution. This helps in debugging and understanding the flow of the script.
 
 ## Notes
 - Ensure that your Flic-Token is valid and has the necessary permissions to upload videos and create posts.
-- The script is designed to handle `.mp4` files. If you need to handle other file types, modify the `on_created` method in the `VideoHandler` class accordingly.
+- The script is designed to handle `.mp4` files. If you need to handle other file types, modify the [on_created](http://_vscodecontentref_/9) method in the [VideoHandler](http://_vscodecontentref_/10) class accordingly.
